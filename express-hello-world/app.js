@@ -1,19 +1,21 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 const port = 3000;
 
 app.use("/static", express.static(path.join(__dirname, "public")));
 
 // our first Route
-app.get("/home", (request, response) => {
+app.get("/home", (req, res) => {
   res.send("<h1> Home PAge</h1>");
 });
 
-app.get("/about", (request, response) => {
+app.get("/about", (req, res) => {
   res.send("<h1>About Me Page .</h1>");
 });
 
-app.get("/Work", (request, response) => {
+app.get("/Work", (req, res) => {
   res.send("<h1>My Work  Page.</h1>");
 });
 
