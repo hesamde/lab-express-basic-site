@@ -19,7 +19,7 @@ app.get("/Work", (req, res) => {
   res.send("<h1>My Work  Page.</h1>");
 });
 
-app.get("/Photo-Gallery", (req, res) => {
+app.get("/photo-gallery", (req, res) => {
   res.send("<h1>Photo Page.</h1>");
 });
 
