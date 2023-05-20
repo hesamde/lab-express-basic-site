@@ -23,4 +23,6 @@ app.get("/photo-gallery", (req, res) => {
   res.send("<h1>Photo Page.</h1>");
 });
 
-app.listen(3000);
+app.listen(port, () => {
+  console.log(`Essencial ${port}`);
+});
