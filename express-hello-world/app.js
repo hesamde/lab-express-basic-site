@@ -24,5 +24,5 @@ app.get("/photo-gallery", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Essencial ${port}`);
+  console.log(`to test the port ${port}`);
 });
